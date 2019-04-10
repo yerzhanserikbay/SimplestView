@@ -11,12 +11,23 @@ import XCTest
 
 class SimplestViewTests: XCTestCase {
 
+    var simplestView: SimplestView!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        simplestView = SimplestView()
     }
+    
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+    
+    func testAdd() {
+        XCTAssertEqual(simplestView.add(a: 1, b: 1), 2)
+    }
+    
+    func testSub() {
+        XCTAssertEqual(simplestView.sub(a: 2, b: 1), 1)
     }
 
     func testExample() {

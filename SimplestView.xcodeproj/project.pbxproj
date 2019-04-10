@@ -15,6 +15,7 @@
 		5AB32A38225DC81C00534968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB32A36225DC81C00534968 /* Main.storyboard */; };
 		5AB32A3A225DC81E00534968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB32A39225DC81E00534968 /* Assets.xcassets */; };
 		5AB32A3D225DC81E00534968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB32A3B225DC81E00534968 /* LaunchScreen.storyboard */; };
+		5AB32A43225DD74C00534968 /* SimplestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB32A42225DD74C00534968 /* SimplestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		5AB32A39225DC81E00534968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AB32A3C225DC81E00534968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AB32A3E225DC81E00534968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AB32A42225DD74C00534968 /* SimplestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				5AB32A15225DC31B00534968 /* SimplestView.h */,
 				5AB32A16225DC31B00534968 /* Info.plist */,
+				5AB32A42225DD74C00534968 /* SimplestView.swift */,
 			);
 			path = SimplestView;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					5AB32A11225DC31B00534968 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					5AB32A1A225DC31B00534968 = {
 						CreatedOnToolsVersion = 10.2;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB32A43225DD74C00534968 /* SimplestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		5AB32A27225DC31B00534968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SimplestView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		5AB32A28225DC31B00534968 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +493,7 @@
 		5AB32A2A225DC31B00534968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N49T88F69F;
 				INFOPLIST_FILE = SimplestViewTests/Info.plist;
@@ -503,6 +512,7 @@
 		5AB32A2B225DC31B00534968 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N49T88F69F;
 				INFOPLIST_FILE = SimplestViewTests/Info.plist;
