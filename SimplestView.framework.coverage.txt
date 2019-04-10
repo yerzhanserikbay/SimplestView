@@ -1,0 +1,21 @@
+    1|       |//
+    2|       |//  SimplestView.swift
+    3|       |//  SimplestView
+    4|       |//
+    5|       |//  Created by YS on 4/10/19.
+    6|       |//  Copyright © 2019 YS. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |public final class SimplestView {
+   10|       |    let name = "SimplesView"
+   11|       |    
+   12|      1|    public func add(a: Int, b: Int) -> Int {
+   13|      1|        return a + b
+   14|      1|    }
+   15|       |    
+   16|      1|    public func sub(a: Int, b: Int) -> Int {
+   17|      1|        return a - b
+   18|      1|    }
+   19|       |    
+   20|       |}
+

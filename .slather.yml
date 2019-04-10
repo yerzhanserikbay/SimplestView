@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: SimplestView.xcodeproj
+scheme: SimplestView
+output_directory: reports
+ignore:
+  - SimplestViewTests/*
